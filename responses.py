@@ -4,15 +4,18 @@ members = []
 
 
 def handle_response(message) -> str:
-    p_message = message.lower()
+    msg = message.lower()
 
-    if p_message == 'hello':
-        return 'Hey there!'
+    if msg == 'hello':
+        return 'oh hey'
 
-    if p_message == '?roll':
+    if msg == '?roll':
         return members[random.randint(0, len(members)-1)]
 
-    if p_message == '?help':
+    if msg == '?help':
         with open('help.txt', 'r') as file:
             text = file.read()
         return text
+
+    if 'fatass' in msg:
+        return "dont call me fat you fucking jew"
