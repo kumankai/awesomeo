@@ -12,6 +12,12 @@ def handle_response(message) -> str:
     if msg == '?roll':
         return members[random.randint(0, len(members)-1)]
 
+    if msg == '?members':
+        listmembers = ''
+        for mmber in members:
+            listmembers += mmber + ', '
+        return listmembers
+
     if msg == '?help':
         with open('help.txt', 'r') as file:
             text = file.read()
