@@ -1,0 +1,3 @@
+send Hello to get a hello back
+roll to roll a random number
+add '!' to get DMs
