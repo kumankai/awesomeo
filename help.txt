@@ -1,3 +1,3 @@
 send Hello to get a hello back
-roll to roll a random number
+?Roll to roll a random member
 add '!' to get DMs
