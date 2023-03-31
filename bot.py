@@ -20,7 +20,7 @@ def run_bot():
     @client.event
     async def on_ready():
         print(f'{client.user} is now running')
-        Guild = client.get_guild(1091183126576898100)
+        Guild = client.get_guild(1090707735873605643)
         for member in Guild.members:
             if member.id != 1091178692593602560:
                 responses.members.append(member.name)
